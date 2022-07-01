@@ -1,3 +1,25 @@
-<input [(ngModel)]="email" type="text"/>
-<input [(ngModel)]="password" type="password"/>
-<button (click)="signIn()">Sign In</button>
+<h1>Merchants</h1>
+<br/><br/>
+<div class="loginCont">
+  <mat-form-field >
+    <mat-label>Email</mat-label>
+    <input
+    type="text"
+    matInput
+    name="email"
+    [(ngModel)]="email"
+    />
+  </mat-form-field>
+  <br/>
+  <mat-form-field >
+    <mat-label>Password</mat-label>
+    <input
+    type="password"
+    matInput
+    name="password"
+    [(ngModel)]="password"
+    />
+  </mat-form-field>
+  <br/>
+  <button (click)="signIn()" class="loginBtn" mat-raised-button>Login</button>
+</div>
