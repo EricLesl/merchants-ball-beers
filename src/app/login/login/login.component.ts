@@ -9,8 +9,8 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent {
 
-  email: string = "ericmacleanleslie@gmail.com";
-  password: string = "Snatchy3211";
+  email: string = "";
+  password: string = "";
   showRegister: boolean = false;
   regEmail: string = "";
   regPassword: string = "";
