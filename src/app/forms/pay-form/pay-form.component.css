@@ -1,0 +1,27 @@
+.payCont{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.formCont{
+  width: 90%;
+  background-color: rgb(143, 143, 143);
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 5px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+}
+
+p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+  color: darkgreen;
+}

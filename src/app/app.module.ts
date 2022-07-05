@@ -17,12 +17,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChalkBeerFormComponent } from './forms/chalk-beer-form/chalk-beer-form.component';
+import { PayFormComponent } from './forms/pay-form/pay-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    ChalkBeerFormComponent
+    ChalkBeerFormComponent,
+    PayFormComponent
   ],
   imports: [
     BrowserModule,

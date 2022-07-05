@@ -29,7 +29,8 @@ export class ChalkBeerFormComponent implements OnInit {
       card.availableBeers = card.availableBeers - this.amount;
       card.totalDrank = card.totalDrank + this.amount;
       this.firestore.collection('cards').doc(card.cardid).update(card).then(d => {
-        console.log(d);
+        alert("Beer has been chalked!");
+        this.goBack();
       })
     } else {
       alert("Shit bud - You don't have enough purchased beers to chalk this. Go back to the main menu and add some.");

@@ -12,6 +12,7 @@
     </div>
   </div>
   <app-chalk-beer-form #chalkBeerForm *ngIf="showProps.showChalkBeer" [showProps]="showProps"></app-chalk-beer-form>
+  <app-pay-form #payForBeer *ngIf="showProps.showPayBeer" [showProps]="showProps"></app-pay-form>
 </div>
 <div class="footer">
   <button class="logoutBtn" mat-raised-button (click)="logout()">Logout</button>

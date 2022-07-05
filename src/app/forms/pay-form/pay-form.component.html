@@ -1,0 +1,29 @@
+<div class="payCont">
+  <p>{{amount}} beers costs ${{amount * 2.50}}</p>
+  <div class="formCont">
+    <mat-form-field appearance="outline">
+      <mat-label>Amount of Beers to Buy</mat-label>
+      <input
+      type="number"
+      matInput
+      name="amount"
+      [(ngModel)]="amount"
+      />
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+      <mat-label>Bill Serial #(s)</mat-label>
+      <input
+      type="text"
+      matInput
+      name="amount"
+      [(ngModel)]="serial"
+      />
+      <small style="color: gold;">If more than one bill, separate by commas.</small>
+    </mat-form-field>
+  </div>
+  <br/>
+  <button mat-raised-button (click)="goBack()">Back</button>
+  <br/><br/>
+  <button mat-raised-button (click)="submit()">Submit</button>
+</div>

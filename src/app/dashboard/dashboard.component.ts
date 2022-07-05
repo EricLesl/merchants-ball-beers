@@ -23,6 +23,9 @@ export class DashboardComponent implements OnInit {
   showProps: any = {
     showMainMenu: true,
     showChalkBeer: false,
+    showPayBeer: false,
+    showFinanceBeer: false,
+    showAddCase: false,
     card: this.card
   }
 
@@ -76,7 +79,18 @@ export class DashboardComponent implements OnInit {
     } else {
       this.showProps.showChalkBeer = true;
       this.showProps.showMainMenu = false;
+      this.showProps.showPayBeer = false;
+      this.showProps.showFinanceBeer = false;
+      this.showProps.showAddCase = false;
     }
+  }
+
+  payForBeer() {
+    this.showProps.showChalkBeer = false;
+    this.showProps.showMainMenu = false;
+    this.showProps.showPayBeer = true;
+    this.showProps.showFinanceBeer = false;
+    this.showProps.showAddCase = false;
   }
 
   doCorrectFunction(number: number) {
@@ -85,7 +99,7 @@ export class DashboardComponent implements OnInit {
     }
 
     if (number == 2) {
-
+      this.payForBeer();
     }
 
     if (number == 3) {
