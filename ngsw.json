@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1657045481463,
+  "timestamp": 1657045660151,
   "index": "https://ericlesl.github.io/merchants-ball-beers/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://ericlesl.github.io/merchants-ball-beers/favicon.ico",
         "https://ericlesl.github.io/merchants-ball-beers/index.html",
-        "https://ericlesl.github.io/merchants-ball-beers/main.d0f1652557732fb5.js",
+        "https://ericlesl.github.io/merchants-ball-beers/main.9338984c18d45f20.js",
         "https://ericlesl.github.io/merchants-ball-beers/manifest.webmanifest",
         "https://ericlesl.github.io/merchants-ball-beers/polyfills.575d92209c418a59.js",
         "https://ericlesl.github.io/merchants-ball-beers/runtime.c1eb34ebb4ba5c78.js",
@@ -54,8 +54,8 @@
     "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-72x72.png": "d00f5a141c76bad50f7a0662bff01ed1eacddfe3",
     "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-96x96.png": "06a812aadfd4a9e743ae50c5d45f329a7e02ef76",
     "https://ericlesl.github.io/merchants-ball-beers/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://ericlesl.github.io/merchants-ball-beers/index.html": "a63727a649213e5ae01980326c9c44cc0186b63c",
-    "https://ericlesl.github.io/merchants-ball-beers/main.d0f1652557732fb5.js": "6a634e2da766ee0f826590ba7ef185b6556cba28",
+    "https://ericlesl.github.io/merchants-ball-beers/index.html": "d44a2f8db20bcbd9ef5eecce3e675f7ecff28344",
+    "https://ericlesl.github.io/merchants-ball-beers/main.9338984c18d45f20.js": "cd52f1a418b1afdb6543ddb3d0b72bbbd8a66ae9",
     "https://ericlesl.github.io/merchants-ball-beers/manifest.webmanifest": "5b807733bf614fe4e0aa6d0bc0206195342829eb",
     "https://ericlesl.github.io/merchants-ball-beers/polyfills.575d92209c418a59.js": "cabbd9897f2cceae3eb28d429867e627bb62a26d",
     "https://ericlesl.github.io/merchants-ball-beers/runtime.c1eb34ebb4ba5c78.js": "11ac5e8ca3badd29117ad7e4bc6e3a0fb372ce5b",
