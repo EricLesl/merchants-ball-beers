@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AppUpdateService } from 'src/app/services/app-update-service';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class LoginComponent {
   regPassword2: string = "";
   name: string = "";
 
-  constructor(private authService: AuthService, private firestore: AngularFirestore){}
+  constructor(private authService: AuthService, private firestore: AngularFirestore, private updateService: AppUpdateService){}
   signIn() {
     this.authService.SignIn(this.email, this.password).then((data) => {
       console.log(data);
