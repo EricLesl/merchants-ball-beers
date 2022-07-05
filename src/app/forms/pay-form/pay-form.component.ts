@@ -47,7 +47,12 @@ export class PayFormComponent implements OnInit {
         let card = this.showProps.card as ICard;
         let oweMessage = false;
         if (card.owing > 0) {
-          card.owing = card.owing - this.amount;
+          if (this.amount > card.owing) {
+            card.availableBeers = card.availableBeers + (this.amount - card.owing);
+            card.owing = card.owing - (this.amount - card.owing);
+          } else {
+            card.owing = card.owing - this.amount;
+          }
           oweMessage = true;
         } else {
           card.availableBeers = card.availableBeers + this.amount;
