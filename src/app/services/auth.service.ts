@@ -12,15 +12,19 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   userData: any; // Save logged in user data
+  currentUser: User;
+
   constructor(
     public afs: AngularFirestore, // Inject Firestore service
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
-    public ngZone: NgZone // NgZone service to remove outside scope warning
+    public ngZone: NgZone, // NgZone service to remove outside scope warning
+    private firestore: AngularFirestore
   ) {
     /* Saving user data in localstorage when
     logged in and setting up null when logged out */
     this.afAuth.authState.subscribe((user) => {
+      console.log('oo' + user);
       if (user) {
         this.userData = user;
         localStorage.setItem('user', JSON.stringify(this.userData));
@@ -46,14 +50,21 @@ export class AuthService {
       });
   }
   // Sign up with email/password
-  SignUp(email: string, password: string) {
+  SignUp(email: string, password: string, displayName: string) {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
         /* Call the SendVerificaitonMail() function when new user sign
         up and returns promise */
-        this.SendVerificationMail();
-        this.SetUserData(result.user);
+        result.user.updateProfile({ displayName: displayName }).then(r => {
+          //this.SendVerificationMail();
+          this.SetUserData(result.user).then(d => {
+            this.addFirstCard(result.user.uid);
+          });
+        }).catch(e => {
+          alert("Error registering: --- " + e);
+        })
+
       })
       .catch((error) => {
         window.alert(error.message);
@@ -119,6 +130,7 @@ export class AuthService {
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
     };
+    this.currentUser = user;
     return userRef.set(userData, {
       merge: true,
     });
@@ -127,7 +139,29 @@ export class AuthService {
   SignOut() {
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
-      this.router.navigate(['sign-in']);
+      this.router.navigate(['/login']);
     });
+  }
+
+  async UpdateProfile(profile: any) {
+    return (await this.afAuth.currentUser).updateProfile(profile);
+  }
+
+  addFirstCard(uid: string) {
+    let data = {
+      userid: uid,
+      availableBeers: 0,
+      totalDrank: 0
+    }
+
+    return new Promise<any>((resolve, reject) =>{
+      this.firestore
+          .collection("cards")
+          .add(data)
+        .then(res => {
+          console.log("Added a case.");
+          console.log(res);
+          }, err => reject(err));
+  });
   }
 }

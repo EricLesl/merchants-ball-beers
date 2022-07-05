@@ -1,9 +1,15 @@
 h1{
   text-align: center;
-  margin-top: 5px;
   font-family: "Brush Script MT";
   font-size: 3em;
   color: gold;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+
+.header{
+  background-color: darkgreen;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
 }
 
 .loginCont{
@@ -15,7 +21,19 @@ h1{
   padding: 5px;
   padding-top: 5em;
   padding-bottom: 5em;
-  border: 2px solid darkgreen;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+}
+
+.registerCont{
+  width: 90%;
+  background-color: rgb(143, 143, 143);
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 5px;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
 }
 
 .mat-form-field{

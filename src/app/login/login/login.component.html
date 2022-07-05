@@ -1,6 +1,9 @@
-<h1>Merchants</h1>
+<div class="header">
+  <h1>Merchants</h1>
+</div>
+
 <br/><br/>
-<div class="loginCont">
+<div class="loginCont" *ngIf="!showRegister">
   <mat-form-field >
     <mat-label>Email</mat-label>
     <input
@@ -22,4 +25,48 @@
   </mat-form-field>
   <br/>
   <button (click)="signIn()" class="loginBtn" mat-raised-button>Login</button>
+  <br/>
+  <button (click)="showSignUp()" class="loginBtn" mat-raised-button>Register</button>
+</div>
+<div class="registerCont" *ngIf="showRegister">
+  <mat-form-field >
+    <mat-label>Email</mat-label>
+    <input
+    type="text"
+    matInput
+    name="email"
+    [(ngModel)]="regEmail"
+    />
+  </mat-form-field>
+  <br/>
+  <mat-form-field >
+    <mat-label>Name</mat-label>
+    <input
+    type="text"
+    matInput
+    name="name"
+    [(ngModel)]="name"
+    />
+  </mat-form-field>
+  <br/>
+  <mat-form-field >
+    <mat-label>Password</mat-label>
+    <input
+    type="password"
+    matInput
+    name="regPassword"
+    [(ngModel)]="regPassword"
+    />
+  </mat-form-field>
+  <mat-form-field >
+    <mat-label>Confirm Password</mat-label>
+    <input
+    type="password"
+    matInput
+    name="regPassword2"
+    [(ngModel)]="regPassword2"
+    />
+  </mat-form-field>
+  <br/>
+  <button (click)="signUp()" class="loginBtn" mat-raised-button>Submit</button>
 </div>

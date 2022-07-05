@@ -1,2 +1,18 @@
-<h1>Merchants</h1>
-<p>Welcome, {{displayName.providerData.displayName}}.</p>
+<div class="topArea">
+  <div class="header">
+    <h1>Merchants</h1>
+  </div>
+  <br/>
+  <p>Welcome, {{displayName}}. You have <b>{{card.availableBeers}}</b> paid for beers to drink and owe <b>${{owing}}</b>. You're lifetime Merchant Beers drank is <b>{{card.totalDrank}}</b>. GET DRINKING BUD!</p>
+</div>
+<div class="mainArea">
+  <div *ngIf="showProps.showMainMenu">
+    <div class="menuOption" (click)="doCorrectFunction(item.number)" *ngFor="let item of menuItems">
+      {{item.text}}
+    </div>
+  </div>
+  <app-chalk-beer-form #chalkBeerForm *ngIf="showProps.showChalkBeer" [showProps]="showProps"></app-chalk-beer-form>
+</div>
+<div class="footer">
+  <button class="logoutBtn" mat-raised-button (click)="logout()">Logout</button>
+</div>

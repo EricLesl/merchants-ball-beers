@@ -16,11 +16,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ChalkBeerFormComponent } from './forms/chalk-beer-form/chalk-beer-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ChalkBeerFormComponent
   ],
   imports: [
     BrowserModule,
