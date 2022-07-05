@@ -8,7 +8,7 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'merchants-ball-beers';
+  title = 'Merchant Ball Beers';
   constructor(private updateService: AppUpdateService){}
 
 }
