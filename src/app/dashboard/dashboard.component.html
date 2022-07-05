@@ -14,6 +14,7 @@
   <app-chalk-beer-form #chalkBeerForm *ngIf="showProps.showChalkBeer" [showProps]="showProps"></app-chalk-beer-form>
   <app-pay-form #payForBeer *ngIf="showProps.showPayBeer" [showProps]="showProps"></app-pay-form>
   <app-finance-form #financeBeer *ngIf="showProps.showFinanceBeer" [showProps]="showProps"></app-finance-form>
+  <app-add-case-form #addCase *ngIf="showProps.showAddCase" [showProps]="showProps"></app-add-case-form>
 </div>
 <div class="footer">
   <button class="logoutBtn" mat-raised-button (click)="logout()">Logout</button>

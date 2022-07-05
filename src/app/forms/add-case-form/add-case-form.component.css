@@ -1,0 +1,25 @@
+.caseCont{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.formCont{
+  width: 90%;
+  background-color: rgb(143, 143, 143);
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 2px;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+}
+
+input{
+  text-align: center;
+  display: block;
+  margin: auto;
+}

@@ -7,6 +7,7 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
+import { ICard } from '../interfaces/icard';
 @Injectable({
   providedIn: 'root',
 })
@@ -151,8 +152,9 @@ export class AuthService {
     let data = {
       userid: uid,
       availableBeers: 0,
-      totalDrank: 0
-    }
+      totalDrank: 0,
+      owing: 0,
+    } as ICard
 
     return new Promise<any>((resolve, reject) =>{
       this.firestore

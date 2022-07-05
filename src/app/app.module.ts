@@ -19,6 +19,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChalkBeerFormComponent } from './forms/chalk-beer-form/chalk-beer-form.component';
 import { PayFormComponent } from './forms/pay-form/pay-form.component';
 import { FinanceFormComponent } from './forms/finance-form/finance-form.component';
+import { AddCaseFormComponent } from './forms/add-case-form/add-case-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { FinanceFormComponent } from './forms/finance-form/finance-form.componen
     DashboardComponent,
     ChalkBeerFormComponent,
     PayFormComponent,
-    FinanceFormComponent
+    FinanceFormComponent,
+    AddCaseFormComponent
   ],
   imports: [
     BrowserModule,

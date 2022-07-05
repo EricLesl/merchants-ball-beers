@@ -105,6 +105,14 @@ export class DashboardComponent implements OnInit {
     this.showProps.showAddCase = false;
   }
 
+  addCase() {
+    this.showProps.showChalkBeer = false;
+    this.showProps.showMainMenu = false;
+    this.showProps.showPayBeer = false;
+    this.showProps.showFinanceBeer = false;
+    this.showProps.showAddCase = true;
+  }
+
   doCorrectFunction(number: number) {
     if (number == 1) {
       this.chalkABeer();
@@ -116,6 +124,10 @@ export class DashboardComponent implements OnInit {
 
     if (number == 3) {
       this.financeBeer();
+    }
+
+    if (number == 4) {
+      this.addCase();
     }
   }
 

@@ -1,0 +1,39 @@
+<div class="caseCont">
+  <div class="formCont">
+    <mat-form-field appearance="outline">
+      <mat-label>Amount of Beers in Case</mat-label>
+      <input
+      type="number"
+      matInput
+      name="amount"
+      [(ngModel)]="amount"
+      />
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+      <mat-label>Case Serial Number</mat-label>
+      <input
+      type="number"
+      matInput
+      name="serial"
+      [(ngModel)]="serial"
+      />
+      <small style="color: gold;">Note: We can check to make sure the case photo and serial # you enter line up.</small>
+    </mat-form-field>
+    <br/>
+    <mat-label style="color: white;">Upload a photo of the case below. Make sure serial # is visible.</mat-label>
+    <br/><br/>
+    <input
+    type="file"
+    id="file"
+    #userPhoto
+    (change)="onFileSelected($event)"
+    name="image"
+    autocomplete="off"
+    />
+  </div>
+  <br/>
+  <button mat-raised-button (click)="goBack()">Back</button>
+  <br/><br/>
+  <button mat-raised-button (click)="submit()" [disabled]="disableSubmit">Submit</button>
+</div>

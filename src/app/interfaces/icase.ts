@@ -1,6 +1,6 @@
 export interface ICase {
-  id: string;
-  barcode: number;
+  caseid?: string;
+  serial: number;
   userid: string;
   beercount: number;
   beerstaken: number;
