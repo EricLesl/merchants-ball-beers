@@ -20,6 +20,7 @@ import { ChalkBeerFormComponent } from './forms/chalk-beer-form/chalk-beer-form.
 import { PayFormComponent } from './forms/pay-form/pay-form.component';
 import { FinanceFormComponent } from './forms/finance-form/finance-form.component';
 import { AddCaseFormComponent } from './forms/add-case-form/add-case-form.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,13 @@ import { AddCaseFormComponent } from './forms/add-case-form/add-case-form.compon
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
