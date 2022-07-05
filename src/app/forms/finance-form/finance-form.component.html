@@ -1,0 +1,18 @@
+<div class="financeCont">
+  <div class="formCont">
+    <mat-form-field appearance="outline">
+      <mat-label>Amount of Beers to Owe</mat-label>
+      <input
+      type="number"
+      matInput
+      name="amount"
+      [(ngModel)]="amount"
+      />
+      <small style="color: gold;">Note: You aren't paying for these beers yet. You will owe ${{amount * 2.50}}.</small>
+    </mat-form-field>
+  </div>
+  <br/>
+  <button mat-raised-button (click)="goBack()">Back</button>
+  <br/><br/>
+  <button mat-raised-button (click)="submit()">Submit</button>
+</div>

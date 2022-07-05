@@ -3,7 +3,7 @@
     <h1>Merchants</h1>
   </div>
   <br/>
-  <p>Welcome, {{displayName}}. You have <b>{{card.availableBeers}}</b> paid for beers to drink and owe <b>${{owing}}</b>. You're lifetime Merchant Beers drank is <b>{{card.totalDrank}}</b>. GET DRINKING BUD!</p>
+  <p>Welcome, {{displayName}}. You have {{card.availableBeers}} beers available to drink and owe ${{card.owing * 2.50}}. You're lifetime Merchant Beers drank is {{card.totalDrank}}. GET DRINKING BUD!</p>
 </div>
 <div class="mainArea">
   <div *ngIf="showProps.showMainMenu">
@@ -13,6 +13,7 @@
   </div>
   <app-chalk-beer-form #chalkBeerForm *ngIf="showProps.showChalkBeer" [showProps]="showProps"></app-chalk-beer-form>
   <app-pay-form #payForBeer *ngIf="showProps.showPayBeer" [showProps]="showProps"></app-pay-form>
+  <app-finance-form #financeBeer *ngIf="showProps.showFinanceBeer" [showProps]="showProps"></app-finance-form>
 </div>
 <div class="footer">
   <button class="logoutBtn" mat-raised-button (click)="logout()">Logout</button>

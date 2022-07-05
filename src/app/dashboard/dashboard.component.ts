@@ -93,6 +93,18 @@ export class DashboardComponent implements OnInit {
     this.showProps.showAddCase = false;
   }
 
+  financeBeer() {
+    if (this.card.availableBeers > 0) {
+      alert("You can't finance beers when you still have some available to drink.");
+      return;
+    }
+    this.showProps.showChalkBeer = false;
+    this.showProps.showMainMenu = false;
+    this.showProps.showPayBeer = false;
+    this.showProps.showFinanceBeer = true;
+    this.showProps.showAddCase = false;
+  }
+
   doCorrectFunction(number: number) {
     if (number == 1) {
       this.chalkABeer();
@@ -103,7 +115,7 @@ export class DashboardComponent implements OnInit {
     }
 
     if (number == 3) {
-
+      this.financeBeer();
     }
   }
 

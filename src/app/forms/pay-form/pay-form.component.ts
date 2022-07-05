@@ -45,9 +45,19 @@ export class PayFormComponent implements OnInit {
       .add(bill)
       .then(res => {
         let card = this.showProps.card as ICard;
-        card.availableBeers = card.availableBeers + this.amount;
+        let oweMessage = false;
+        if (card.owing > 0) {
+          card.owing = card.owing - this.amount;
+          oweMessage = true;
+        } else {
+          card.availableBeers = card.availableBeers + this.amount;
+        }
         this.firestore.collection('cards').doc(card.cardid).update(card).then(d => {
-          alert("Your card has succesfully been updated with " + this.amount + " beers.");
+          if (oweMessage) {
+            alert("You have succesfully paid off " + this.amount + " beers.");
+          } else {
+            alert("Your card has succesfully been updated with " + this.amount + " beers.");
+          }
           this.goBack();
         })
         console.log("Added a bill.");

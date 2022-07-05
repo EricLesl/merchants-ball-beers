@@ -18,13 +18,15 @@ import { MaterialModule } from 'src/material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChalkBeerFormComponent } from './forms/chalk-beer-form/chalk-beer-form.component';
 import { PayFormComponent } from './forms/pay-form/pay-form.component';
+import { FinanceFormComponent } from './forms/finance-form/finance-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
     ChalkBeerFormComponent,
-    PayFormComponent
+    PayFormComponent,
+    FinanceFormComponent
   ],
   imports: [
     BrowserModule,
