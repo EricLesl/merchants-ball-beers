@@ -18,7 +18,7 @@ export class LoginComponent {
   regPassword2: string = "";
   name: string = "";
 
-  constructor(private authService: AuthService, private firestore: AngularFirestore, private updateService: AppUpdateService){}
+  constructor(private authService: AuthService, private firestore: AngularFirestore){}
   signIn() {
     this.authService.SignIn(this.email, this.password).then((data) => {
       console.log(data);
