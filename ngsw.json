@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1657041044789,
+  "timestamp": 1657045019447,
   "index": "https://ericlesl.github.io/merchants-ball-beers/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://ericlesl.github.io/merchants-ball-beers/favicon.ico",
         "https://ericlesl.github.io/merchants-ball-beers/index.html",
-        "https://ericlesl.github.io/merchants-ball-beers/main.b75508b110470bdc.js",
+        "https://ericlesl.github.io/merchants-ball-beers/main.f2a106fc1d94292b.js",
         "https://ericlesl.github.io/merchants-ball-beers/manifest.webmanifest",
         "https://ericlesl.github.io/merchants-ball-beers/polyfills.575d92209c418a59.js",
         "https://ericlesl.github.io/merchants-ball-beers/runtime.c1eb34ebb4ba5c78.js",
@@ -34,6 +34,7 @@
         "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-152x152.png",
         "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-192x192.png",
         "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-384x384.png",
+        "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-48x48.png",
         "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-512x512.png",
         "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-72x72.png",
         "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-96x96.png"
@@ -43,17 +44,18 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-128x128.png": "2036700fb10f17f63baefbaadfcde3901b4515c0",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-144x144.png": "71e0fed1b46b31dea81aa2da478d511aebd3bf80",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-152x152.png": "d22cf99dce046584b304af062b27a82cd54fae43",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-192x192.png": "a249de28d2762dc08dcd00cddff4509cbf4d8051",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-384x384.png": "fb04578c96639d1e1c0ba362052e013b2f7a9578",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-48x48.png": "d8e4bcd2bbe941497346cbbca9437fc6a3b17144",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-512x512.png": "7a74ba2584ecefa2ce980054b8cc34c5bc413fcb",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-72x72.png": "d00f5a141c76bad50f7a0662bff01ed1eacddfe3",
+    "https://ericlesl.github.io/merchants-ball-beers/assets/icons/icon-96x96.png": "06a812aadfd4a9e743ae50c5d45f329a7e02ef76",
     "https://ericlesl.github.io/merchants-ball-beers/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://ericlesl.github.io/merchants-ball-beers/index.html": "1e1710f960b99aef01e89da1213b17d73d07e5cf",
-    "https://ericlesl.github.io/merchants-ball-beers/main.b75508b110470bdc.js": "a571c74c41c2691474d3175508049606742d48a8",
+    "https://ericlesl.github.io/merchants-ball-beers/index.html": "e0a270528becc211ea43e707324095811c2b2d89",
+    "https://ericlesl.github.io/merchants-ball-beers/main.f2a106fc1d94292b.js": "f5196a449e886ea7bb2f496b0c2eb138cb72ab1b",
     "https://ericlesl.github.io/merchants-ball-beers/manifest.webmanifest": "5b807733bf614fe4e0aa6d0bc0206195342829eb",
     "https://ericlesl.github.io/merchants-ball-beers/polyfills.575d92209c418a59.js": "cabbd9897f2cceae3eb28d429867e627bb62a26d",
     "https://ericlesl.github.io/merchants-ball-beers/runtime.c1eb34ebb4ba5c78.js": "11ac5e8ca3badd29117ad7e4bc6e3a0fb372ce5b",
